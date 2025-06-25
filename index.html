@@ -52,6 +52,17 @@
   <link rel="stylesheet" href="https://scevo.net/assets/css/style.css">
   <style>
     html{overflow-x: hidden;}
+    #back-to-top-href{
+      display: inline-block;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      border-radius: 100%;
+      background: green;
+      z-index: 99999;
+      top: 0;
+      left: 0;      
+    }
     .widget_categories a::before
     ,.sidebar-area .wp-block-heading::after, .sidebar-area .wp-block-search__label::after
     ,.fa-calendar-alt::before{
@@ -306,7 +317,7 @@ Preloader
       <main class="vs-page__main">
           <!-- Breadcrumb Style -->
           <div class="breadcumb-wrapper background-image" id="breadcrumb-background" style="background-image: url(&quot;https://scevo.net/assets/img/blog/breadcrumb-blog-update-1_15.png&quot;);" data-bg-src="https://scevo.net/assets/img/blog/breadcrumb-blog-update-generic.png">
-              <div class="container">
+              <div id="-0" class="container">
                   <div class="breadcumb-content">
                       <h1 class="breadcumb-title wow animate__fadeInUp" data-wow-delay="0.35s" id="blog-title" style="visibility: visible; animation-delay: 0.35s; animation-name: fadeInUp;">1.16 업데이트 패치 노트<br>(공식패치가 아님을 알립니다)</h1>
                       <div class="breadcumb-menu-wrap">
@@ -2049,19 +2060,20 @@ Preloader
       <!--********************************
     End Main Content
 ******************************** -->
-<!--       <button class="back-to-top" id="backToTop" aria-label="Back to Top">
+      <button class="back-to-top" id="backToTop" aria-label="Back to Top">
+          <a id="back-to-top-href" href="#-0"></a>
           <span class="progress-circle">
               <svg viewBox="0 0 100 100">
                   <circle class="bg" cx="50" cy="50" r="40"></circle>
                   <circle class="progress" cx="50" cy="50" r="0" style="stroke-dasharray: 251.327; stroke-dashoffset: 230.13;"></circle>
               </svg>
-              <span class="progress-percentage" id="progressPercentage">0%</span>
+              <span class="progress-percentage" id="progressPercentage">↑</span>
           </span>
       </button>
       <div id="imageModal" class="modal">
           <span class="close-modal" id="closeModal">×</span>
           <img class="modal-content" id="modalImg" src="" alt="">
-      </div> -->
+      </div>
       <!--********************************
     Code End  Here 
 ******************************** -->
