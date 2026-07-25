@@ -1,0 +1,198 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>상담신청_완료</title>
+	<meta http-equiv="refresh" content="4; url=http://www.hunterpc.co.kr/mobile_landing/">
+	<link rel="stylesheet" href="css/reset_ani.css">
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
+	<style>
+		@keyframes animate{
+			0%{
+				transform: rotate(0deg);
+			}
+			100%{
+				transform: rotate(360deg);
+			}
+		}
+		@keyframes space_ani{
+			0%{
+				letter-spacing: 1px;
+			}
+			100%{
+				letter-spacing: 1.5px;
+			}
+		}
+		body{overflow: hidden;}
+		#wrap{
+			width: 100%;
+			height: 100%;
+			background-image: url(img/page1/main_img1_3.jpg);
+			background-size: cover;
+			background-position: center center;
+			animation: scale_ani 12s infinite ease-in-out alternate;
+		}
+		.fixed_wrap{
+			position: fixed;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			text-align: center;
+			width: 100%;
+		}
+		.fixed_wrap > p{
+			font-family: "notosans", sans-serif;
+			font-weight: 600;
+			font-size: 25px;
+			text-align: center;
+			color: white;
+			animation: space_ani 4s ease-in-out infinite alternate;
+		}
+		.fixed_wrap > p > span{
+			font-family: "notosans", sans-serif;
+			font-weight: 400;
+			font-size: 15px;
+			letter-spacing: 1px;
+		}
+		.loader{
+		  position : relative;
+			margin: 20px auto 0;
+		  width : 200px;
+		  height : 200px;
+		}
+		.rotate{
+		  position : absolute;
+		  top: 0;
+		  left: 0;
+		  right: 0;
+		  margin: 0 auto;
+		  width : 100%;
+		  height : 100%;
+		  animation : animate 5s linear infinite;
+		  -ms-animation : animate 5s linear infinite;
+		}
+		.rotate > p{
+		  content : '';
+		  position : absolute;
+		  width : 40%;
+		  height : 40%;
+			background-color: transparent;
+		  border-radius : 50%;
+		}
+		.rotate > p:nth-of-type(1){
+		  top : 0;
+		  left : 0;
+		  right : 0;
+		  margin : 0 auto;
+		  box-shadow : 0 0 150px #8dff08;
+		}
+		.rotate > p:nth-of-type(2){
+		  top : 50%;
+			-webkit-transform: translateY(-50%);
+			-moz-transform: translateY(-50%);
+			-o-transform: translateY(-50%);
+			-ms-transform: translateY(-50%);
+		  right : 0;
+		  box-shadow : 0 0 150px #ffeb3b;
+		}
+		.rotate > p:nth-of-type(3){
+		  bottom : 0;
+		  left : 0;
+		  right : 0;
+		  margin : 0 auto;
+		  box-shadow : 0 0 150px #ff3b8d;
+		}
+		.rotate > p:nth-of-type(4){
+		  top : 50%;
+			-webkit-transform: translateY(-50%);
+			-moz-transform: translateY(-50%);
+			-o-transform: translateY(-50%);
+			-ms-transform: translateY(-50%);
+			transform: translateY(-50%);
+		  left : 0;
+		  box-shadow : 0 0 150px #07b2ff;
+		}
+		.loader span{
+		  position : absolute;
+		  top : 0;
+		  left : 0;
+		  width : 100%;
+		  height : 100%;
+		  border-radius : 50%;
+		  z-index: 1;
+		  display: -webkit-box;
+		  display: -ms-flexbox;
+		  display : flex;
+		  -webkit-box-pack: center;
+		  -ms-flex-pack: center;
+		  justify-content : center;
+		  -webkit-box-align: center;
+		  -ms-flex-align: center;
+		  align-items: center;
+		  text-transform : uppercase;
+		  letter-spacing : 5px;
+		  font-weight: 500;
+		  font-size : 18px;
+			font-family: "notosans", sans-serif;
+			animation: space_ani 1.5s ease-in-out infinite alternate;
+		  color : rgba(255,255,255,0.6);
+			background-color : rgba(0,0,0,0.2);
+		}
+		.loader span::before{
+		  content : '';
+		  position : absolute;
+		  top : 8px;
+		  left : 8px;
+		  right : 8px;
+		  bottom : 8px;
+		  background : transparent;
+		  border-radius : 50%;
+		  box-shadow : inset 0 0 20px rgba(255,255,255,0.08);
+		}
+	</style>
+
+<!-- 전환페이지 설정 -->
+<script type="text/javascript" src="//wcs.naver.net/wcslog.js"></script>
+<script type="text/javascript">
+var _nasa={};
+_nasa["cnv"] = wcs.cnv("4","1"); // 전환유형, 전환가치 설정해야함. 설치매뉴얼 참고
+</script>
+
+<!-- AceCounter Mobile WebSite Gathering Script V.8.0.2019080601 -->
+<script language='javascript'>
+   var _AceGID=(function(){var Inf=['hunterpc.co.kr','www.hunterpc.co.kr,hunterpc.co.kr,m.hunterpc.co.kr','AZ3A79046','AM','0','NaPm,Ncisy','ALL','0']; var _CI=(!_AceGID)?[]:_AceGID.val;var _N=0;if(_CI.join('.').indexOf(Inf[3])<0){ _CI.push(Inf);  _N=_CI.length; } return {o: _N,val:_CI}; })();
+   var _AceCounter=(function(){var G=_AceGID;var _sc=document.createElement('script');var _sm=document.getElementsByTagName('script')[0];if(G.o!=0){var _A=G.val[G.o-1];var _G=(_A[0]).substr(0,_A[0].indexOf('.'));var _C=(_A[7]!='0')?(_A[2]):_A[3];var _U=(_A[5]).replace(/\,/g,'_');_sc.src=(location.protocol.indexOf('http')==0?location.protocol:'http:')+'//cr.acecounter.com/Mobile/AceCounter_'+_C+'.js?gc='+_A[2]+'&py='+_A[1]+'&up='+_U+'&rd='+(new Date().getTime());_sm.parentNode.insertBefore(_sc,_sm);return _sc.src;}})();
+</script>
+<noscript><img src='http://gmb.acecounter.com/mwg/?mid=AZ3A79046&tp=noscript&ce=0&' border='0' width='0' height='0' alt=''></noscript>
+<!-- AceCounter Mobile Gathering Script End -->
+</head>
+<body>
+	<div id="wrap">
+		<div class="fixed_wrap">
+			<p>
+				상담신청이 완료되었습니다!<br />
+				<span>(정확하지 않은 정보를 입력했을경우 신청이 누락될 수 있습니다.)</span>
+			</p>
+			<div class="loader">
+		    <div class="rotate">
+		      <p></p>
+		      <p></p>
+		      <p></p>
+		      <p></p>
+		    </div>
+		    <span>Loading</span>
+		  </div>
+		</div>
+	</div>
+
+<!-- 공통 적용 스크립트 , 모든 페이지에 노출되도록 설치. 단 전환페이지 설정값보다 항상 하단에 위치해야함 -->
+<script type="text/javascript" src="//wcs.naver.net/wcslog.js"> </script>
+<script type="text/javascript">
+if (!wcs_add) var wcs_add={};
+wcs_add["wa"] = "s_2826ef20b686";
+if (!_nasa) var _nasa={};
+wcs.inflow();
+wcs_do(_nasa);
+</script>
+</body>
+</html>
