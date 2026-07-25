@@ -1,0 +1,162 @@
+@charset "utf-8";
+
+/* 폰트 */
+@font-face{
+	font-family: "notosans";
+	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+	font-weight: 400;
+	font-style: normal;
+} /* "notosans", sans-serif; */
+@font-face {
+	font-family: 'notosans';
+	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-4Regular.woff') format('woff');
+	font-weight: 500;
+	font-style: normal;
+} /* "notosans", sans-serif; */
+@font-face {
+	font-family: 'notosans';
+	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-6Bold.woff') format('woff');
+	font-weight: 600;
+	font-style: normal;
+} /* "notosans", sans-serif; */
+@font-face{
+	font-family: "notosans";
+	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-7ExtraBold.woff') format('woff');
+	font-weight: 700;
+	font-style: bold;
+} /* "notosans", sans-serif; */
+@font-face{
+	font-family: "blacksans";
+	src: url(../font/BlackHanSans-Regular.otf);
+	src: url('../font/BlackHanSans-Regular.woff')format('woff');
+} /* "blacksans", sans-serif; */
+
+/* reset */
+*{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	text-decoration: none;
+	-webkit-font-smoothig: antialised;
+} /* 전체 초기화 */
+html, body{height: 100%;}
+iframe, video, img, fieldset, input{
+	margin: 0;
+	padding: 0;
+	outline: none;
+	border: none;
+}
+a{
+	text-decoration: none;
+	color: inherit;
+	cursor: pointer;
+	font-size: inherit;
+	border: none;
+	background: none;
+} /* 하이퍼링크 초기화 */
+img{vertical-align: top;}
+table{
+	padding: 0;
+	border-spacing: 0;
+	border: 0;
+	border-collapse: collapse;
+} /* 표 공통 */
+th, td{padding: 0; margin: 0;} /* 표 제목, 내용 공통 */
+ul, li{list-style: none;}
+
+/* 스크롤 css */
+::-webkit-scrollbar{width: 12px;} /* 스크롤 너비 */
+::-webkit-scrollbar-track{box-shadow: inset 0 0 2.5px 2px rgba(0,0,0,0.5);} /* 스크롤 전체범위 */
+::-webkit-scrollbar-thumb{
+	background-color: #0c0c0c;
+	border-radius: 5px;
+	transition: all 1s;
+} /* 스크롤 영역 */
+::-webkit-scrollbar-thumb:hover{border: 2px outset white;}
+::-webkit-scrollbar-button:start:decrement,::-webkit-scrollbar-button:end:increment{display: none;} /* 스크롤 위아래 화살표 */
+
+/* 애니메이션 */
+@keyframes flow_back_ani{
+	0%{
+		width: 70%;
+		height: 70%;
+		opacity: 0.05;
+	}
+	30%{
+		width: 85%;
+		height: 55%;
+		opacity: 0.28;
+	}
+	40%{
+		width: 85%;
+		height: 55%;
+		opacity: 0.42;
+	}
+	50%{
+		width: 50%;
+		height: 90%;
+		opacity: 0.56;
+	}
+	65%{
+		width: 95%;
+		height: 45%;
+		opacity: 0.7;
+	}
+	75%{
+		width: 45%;
+		height: 95%;
+		opacity: 0.84;
+	}
+	100%{
+		width: 100%;
+		height: 100%;
+		opacity: 1;
+	}
+} /* 확대 후 축소 애니메이션 */
+@keyframes start_ani{
+	0%{opacity: 0;}
+	100%{opacity: 1;}
+} /* 시작 애니메이션 */
+.start_animation{animation: start_ani 1s ease;}
+@keyframes start_ani2{
+	0%{opacity: 0;}
+	100%{opacity: 1;}
+} /* 시작 애니메이션2 */
+@-webkit-keyframes scale_ani{
+	0%{
+		-webkit-transform: scale(1);
+		-moz-transform: scale(1);
+		-o-transform: scale(1);
+		transform: scale(1);
+	}
+	100%{
+		-webkit-transform: scale(1.1);
+		-moz-transform: scale(1.1);
+		-o-transform: scale(1.1);
+		transform: scale(1.1);
+	}
+} /* 확대 애니메이션 */
+@-webkit-keyframes rotate_ani{
+	0%{
+		-webkit-transform: translate(-50%, -50%) rotate(0deg);
+		-moz-transform: translate(-50%, -50%) rotate(0deg);
+		-o-transform: translate(-50%, -50%) rotate(0deg);
+		transform: translate(-50%, -50%) rotate(0deg);
+	}
+	100%{
+		-webkit-transform: translate(-50%, -50%) rotate(360deg);
+		-moz-transform: translate(-50%, -50%) rotate(360deg);
+		-o-transform: translate(-50%, -50%) rotate(360deg);
+		transform: translate(-50%, -50%) rotate(360deg);
+	}
+} /* 회전 애니메이션 위치 가운데 적용상태 */
+@keyframes jelly_ani{
+	0%{transform: scale(1,1);}
+	30%{transform: scale(1.25,0.75);}
+	40%{transform: scale(0.75,1.25);}
+	50%{transform: scale(1.15,0.85);}
+	65%{transform: scale(0.95,1.05);}
+	75%{transform: scale(1.05,0.95);}
+	100%{transform: scale(1,1);}
+} /* 체크박스 젤리효과 */
+input:checked{animation: jelly_ani .8s ease-in-out;}
